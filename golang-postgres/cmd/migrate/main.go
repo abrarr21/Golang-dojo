@@ -35,7 +35,7 @@ func main() {
 
 	case "down":
 		log.Println("Migration DOWN called")
-		if err := m.Down(); err != nil {
+		if err := m.Steps(-1); err != nil {
 			log.Fatal(err)
 		}
 
